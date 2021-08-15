@@ -1,3 +1,26 @@
-h1 {
-  color: blue;
+h2 {
+  color: #202124;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #70757a;
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.weather-app {
+  width: 650px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
