@@ -17,10 +17,26 @@ li {
   line-height: 16px;
 }
 
-.weather-app {
+.weather-app-wrapper {
   width: 650px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid grey;
   border-radius: 5px;
+}
+
+.weather-app strong {
+  color: #202124;
+  line-height: 60px;
+  font-size: 48px;
+  font-weight: normal;
+  vertical-align: top;
+  
+}
+
+.units {
+vertical-align: top;
 }
