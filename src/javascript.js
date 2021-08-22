@@ -23,15 +23,16 @@ function formatDate(timestamp) {
 
 function displayTemperature(response) {
   let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = Math.round(response.data.main.temp);
   let cityH2 = document.querySelector("#city");
+  let dateAndTime = document.querySelector("#date");
+  let iconImage = document.querySelector("#icon");
+
+  temperature.innerHTML = Math.round(response.data.main.temp);
   cityH2.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = Math.round(response.data.wind.speed);
-  let dateAndTime = document.querySelector("#date");
   dateAndTime.innerHTML = formatDate(response.data.dt * 1000);
-  let iconImage = document.querySelector("#icon");
   iconImage.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
